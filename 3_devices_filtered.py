@@ -18,7 +18,7 @@ with manager.connect(
     hostkey_verify=False
 ) as m:
     netconf_reply = m.get_config(source='running', filter=netconf_filter)
-    with open('3_sample.txt', 'w') as f:
+    with open('3_devices_filtered_output.txt', 'w') as f:
         print('Writing server config to file...')
         f.write(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
 

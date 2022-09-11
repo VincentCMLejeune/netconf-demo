@@ -10,8 +10,8 @@ m = manager.connect(
     hostkey_verify=False
 )
 
-print('Writing server capabilities to file...')
-with open('1_sample.txt', 'w') as f:
+with open('1_capabilities_output.txt', 'w') as f:
+    print('Writing server capabilities to file...')
     for capability in m.server_capabilities:
         f.write(capability)
         f.write('\n')

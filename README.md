@@ -12,7 +12,7 @@ The output is printed to a corresponding sample txt file.
 
 # Usage
 ```python3 1_capabilities.py```
-Will print the output in 1_capabilities.txt
+Will print the output in a new file called 1_capabilities_output.txt
 
 # Credits
 * [ncclient](https://github.com/ncclient/ncclient)
